@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1>Guessing Game</h1>
+        <p>Guess a number between 1 and 100</p>
+        <div class="input-group mb-3">
+            <input type="number" id="guessInput" class="form-control" placeholder="Enter your guess">
+            <div class="input-group-append">
+                <button id="guessButton" class="btn btn-primary" onclick="checkGuess()">Guess</button>
+                <button id="resetButton" class="btn btn-secondary d-none" onclick="resetGame()">Reset</button>
+            </div>
+        </div>
+        <p id="result" class="lead"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
